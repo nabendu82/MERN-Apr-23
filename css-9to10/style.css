@@ -1,0 +1,69 @@
+.block{
+    float: left;
+    width: 48%;
+    padding: 10px;
+    border: 4px solid black;
+    box-sizing: border-box;
+
+}
+
+.block1{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    border: 4px solid black;
+    box-sizing: border-box;
+}
+
+.pbox{
+    width: 200px;
+    height: 200px;
+    border: 4px solid black;
+    position: relative;
+    background: url(./images/levi-arnold-SyTnDaax6eE-unsplash.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    object-fit: fill;
+}
+
+.pbox h1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    
+}
+
+.pbox h2{
+    position: absolute;
+    bottom: 250px;
+    right: 300px;
+}
+
+.fbtn{
+    position: fixed;
+    top: 300px;
+}
+
+.psuedo li:first-child{
+    background-color: red;
+}
+
+.psuedo li:last-child{
+    background-color: pink;
+}
+
+.psuedo li:nth-child(4){
+    background-color: green;
+}
+
+.psuedo li:nth-child(2){
+    background-color: orangered;
+}
+
+.psuedo1 li:nth-child(odd){
+    background-color: orangered;
+}
+
+.psuedo1 li:nth-child(even){
+    background-color: green;
+}
