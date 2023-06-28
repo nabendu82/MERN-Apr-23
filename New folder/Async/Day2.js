@@ -52,56 +52,56 @@
 // ()=>console.log('error')
 // ) //100;
 // .then((result)=>
-//  result.forEach(function(value){
-//     console.log(value.title)
-//  })
-// )
+// //  result.forEach(function(value){
+// //     console.log(value.title)
+// //  })
+// // )
 
 
-// async - try catch;
+// // async - try catch;
 
-function displayUI(items){
-  const conatiner = document.querySelector('#container')
+// function displayUI(items){
+//   const conatiner = document.querySelector('#container')
    
- items.forEach((item) => {
-      const {title, image ,price}=item;
+//  items.forEach((item) => {
+//       const {title, image ,price}=item;
   
 
-      const newTitle = title.slice(0,20)
+//       const newTitle = title.slice(0,20)
       
-conatiner.innerHTML +=
-`
-<div class='inner-cart'>
-<h1>${newTitle}</h1>
-<img src=${image} alt='img'>
-<h5>${price}</h5>
-<button>Buy Now</button>
-</div>
-`
- });
+// conatiner.innerHTML +=
+// `
+// <div class='inner-cart'>
+// <h1>${newTitle}</h1>
+// <img src=${image} alt='img'>
+// <h5>${price}</h5>
+// <button>Buy Now</button>
+// </div>
+// `
+//  });
 
   
-}
+// }
 
 
 
 
 
-const fetchData =async function(){
+// const fetchData =async function(){
 
-   try{
-      const data =await fetch('https://fakestoreapi.com/products')
-      const res = await data.json();
+//    try{
+//       const data =await fetch('https://fakestoreapi.com/products')
+//       const res = await data.json();
      
-      displayUI(res)
-      console.log(res)
-   }catch{
-    console.log('I am facing error')
-   }
+//       displayUI(res)
+//       console.log(res)
+//    }catch{
+//     console.log('I am facing error')
+//    }
   
-}
+// }
 
-fetchData()
+// fetchData()
 
 
 
@@ -121,4 +121,58 @@ fetchData()
 // }catch{
 
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+//Closure and Hoisting:
+
+
+
+// Hoisting - moving your variables and functions to the top the file;
+
+
+
+
+
+
+// var b;
+
+// console.log(b)
+
+
+//js memory allocation is happen js i going to excute the code
+
+//hoisting-
+// var -keyword; - partial hoisted
+//function   - fully hoisted;
+
+
+//bus
+
+
+// a=10;
+// a=undefined; /temporary;
+//memory heap;
+
+// console.log(a)
+
+// const a = ()=>{
+//    console.log('a')
+// }
+
+
+
+//closure : 
+
+//if the function excuted , returned something or completetly removed from the memory heap still we can ablt access the function datas:
+
 
