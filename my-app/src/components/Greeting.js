@@ -1,10 +1,10 @@
 const Greeting = (props) => {
-    console.log(props)
-
+    const { name, type, children } = props;
+    
     return (
         <>
-            <h1>Greeting from {props.name} which is {props.type}</h1>
-            <p>{props.children}</p>
+            <h1>Greeting from {name} which is {type}</h1>
+            <p>{children}</p>
         </>
     )
 }
