@@ -1,10 +1,10 @@
 import './App.css';
-import HookObj from './components/HookObj';
+import MouseContainer from './components/MouseContainer';
 
 function App() {
   return (
     <div className="App">
-      <HookObj />
+      <MouseContainer />
     </div>
   );
 }
