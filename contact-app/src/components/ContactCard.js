@@ -1,7 +1,7 @@
 import user from "../images/user.png"
 
 const ContactCard = (props) => {
-    const { name, email } = props.contact;
+    const { id, name, email } = props.contact;
 
     return (
         <div className="item">
@@ -10,7 +10,11 @@ const ContactCard = (props) => {
                 <div className="header">{name}</div>
                 <div>{email}</div>
             </div>
-            <i className="trash alternate outline icon" style={{ color: "red" }}></i>
+            <i 
+                className="trash alternate outline icon" 
+                style={{ color: "red" }}
+                onClick={() => props.clickHandler(id)}
+            ></i>
         </div>
     )
 }
