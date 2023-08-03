@@ -121,7 +121,7 @@ const Data = () => {
                                 <p><InsertDriveFileIcon /> {file.data.filename}</p> 
                             </a>
                             <p>Owner </p>
-                            <p>{new Date(file.data.timestamp.seconds*1000).toUTCString()}</p>
+                            <p>{new Date(file.data.timestamp?.seconds*1000).toUTCString()}</p>
                             <p>{file.data.size}</p>
                         </DataListRow>
                     ))}
